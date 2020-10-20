@@ -1218,8 +1218,10 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: b2a01e0ae5f611a4da3b95e3fc0a420b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 9100000, guid: e4d38f097ea35254fb4b833d568bb089, type: 2}
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: b2a01e0ae5f611a4da3b95e3fc0a420b, type: 3}
+    - {fileID: 11400000, guid: b2a01e0ae5f611a4da3b95e3fc0a420b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b2a01e0ae5f611a4da3b95e3fc0a420b, type: 3}
 --- !u!1 &963194225
 GameObject:
@@ -2122,6 +2124,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 949647577}
   m_PrefabAsset: {fileID: 0}
+--- !u!195 &1396403525
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396403520}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &1396403527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,11 +2155,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396403520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bacc828c2f3a8243ad0086663a2b9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 789fa34e49869e441a9fd94de0725662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_walkSpeed: 5
-  m_turnSpeed: 3
+--- !u!114 &1396403528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396403520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ddf2771b19cb44a9c3f985d8649cc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1451218341
 PrefabInstance:
   m_ObjectHideFlags: 0
