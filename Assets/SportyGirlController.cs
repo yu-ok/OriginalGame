@@ -6,11 +6,14 @@ using UnityEngine.AI;
 public class SportyGirlController : MonoBehaviour
 {
 	
+	public Vector3 position;
+
     // Start is called before the first frame update
     void Start()
-    {
-		
-    }
+   {
+    Transform startPosition = this.gameObject.GetComponent<Transform> ();
+	startPosition.transform.position = new Vector3(21.3f, 0.3f, 0.0f);
+   }
 
    void Update () 
    {
@@ -21,7 +24,7 @@ public class SportyGirlController : MonoBehaviour
 	//キャラを回転させる
 	transform.Rotate(new Vector3(0.0f, moveHorizontal, 0.0f));
 
-	//キャラの向いている方向に移動
-	agent.Move (transform.forward * moveVertical * 0.02f);
+	position += transform.forward * moveVertical * 0.02f;
+	//agent.nextPosition = position;
 	}
 }
