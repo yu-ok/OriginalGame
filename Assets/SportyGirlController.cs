@@ -24,7 +24,7 @@ public class SportyGirlController : MonoBehaviour
 	//キャラを回転させる
 	transform.Rotate(new Vector3(0.0f, moveHorizontal, 0.0f));
 
-	position += transform.forward * moveVertical * 0.02f;
-	//agent.nextPosition = position;
+	//position += transform.forward * moveVertical * 0.02f;
+	agent.destination = transform.position + transform.forward * moveVertical * 1.0f;
 	}
 }
