@@ -58,6 +58,7 @@ public class SportyGirlController : MonoBehaviour
 		if(other.gameObject.tag == "Enemy1")
 		{
 			point -= 1;
+			pointText.text = point.ToString();
 		}
    }
 }
