@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GoldCoinsTag
   - Enemy1
+  - StartGoalTag
   layers:
   - Default
   - TransparentFX
