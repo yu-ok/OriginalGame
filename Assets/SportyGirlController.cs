@@ -9,7 +9,7 @@ public class SportyGirlController : MonoBehaviour
 	public int point = 1;
 	public Vector3 position;
 	public Text pointText;
-	private bool isEnd = false;
+	public bool isEnd = false;
     private GameObject stateText;
 	Rigidbody rbSportyGirl;
 	NavMeshAgent agent;
@@ -55,6 +55,7 @@ public class SportyGirlController : MonoBehaviour
 		{
 			this.stateText.GetComponent<Text>().text = "GAME OVER";
 			agent.enabled = false;
+			
 		}
 		if(other.gameObject.tag == "StartGoalTag")
 		{
